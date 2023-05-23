@@ -1,0 +1,31 @@
+.Button {
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+
+  border: 1px solid transparent;
+
+  transition: 0.25s ease all;
+
+  &.filled {
+    background-color: black;
+    color: white;
+
+    border-color: black;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+
+  &.outline {
+    background-color: white;
+    color: black;
+
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}

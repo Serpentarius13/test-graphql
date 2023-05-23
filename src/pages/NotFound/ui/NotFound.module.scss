@@ -1,0 +1,19 @@
+.NotFound {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
