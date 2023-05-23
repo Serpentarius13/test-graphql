@@ -8,6 +8,7 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 
 type TRoute = Omit<RouteObject, "element"> & {
   element: ReturnType<typeof lazy>;
+  children?: ReturnType<typeof lazy>;
 };
 
 export const routes: TRoute[] = [

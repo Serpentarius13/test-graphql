@@ -1,4 +1,4 @@
-import { Button } from "@/shared/Button";
+import { CustomLink } from "@/shared/Button";
 import cls from "./NotFound.module.scss";
 
 export default function NotFound() {
@@ -8,7 +8,7 @@ export default function NotFound() {
 
       <h2>Хотите вернуться назад?</h2>
 
-      <Button link={{ to: "/", text: "Домой" }} />
+      <CustomLink to="/"> Домой</CustomLink>
     </div>
   );
 }

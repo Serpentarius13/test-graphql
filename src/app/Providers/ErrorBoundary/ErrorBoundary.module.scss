@@ -1,0 +1,22 @@
+.ErrorPage {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: 4rem;
+    color: red;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 2.4rem;
+    max-width: 55rem;
+  }
+}
