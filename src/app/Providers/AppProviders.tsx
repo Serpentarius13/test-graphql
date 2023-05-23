@@ -6,7 +6,6 @@ export default function AppProviders() {
   return (
     <ApolloClientProvider>
       <RouterClientProvider />
-      <ClientLayout />
     </ApolloClientProvider>
   );
 }
