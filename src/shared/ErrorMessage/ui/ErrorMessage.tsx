@@ -14,7 +14,7 @@ export default function ErrorMessage({
     <div className={cls.error}>
       <p>{error}</p>
 
-      {renderRefreshButton && <Button onClick={() => location.reload()} />}
+      {renderRefreshButton && <Button onClick={() => location.reload()}> Go! </Button>}
     </div>
   );
 }
