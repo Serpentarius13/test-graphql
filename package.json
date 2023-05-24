@@ -20,6 +20,7 @@
     "zustand": "^4.3.8"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.0",
     "@graphql-codegen/client-preset": "3.0.1",
     "@types/node": "^20.2.3",
     "@types/react": "^18.0.28",

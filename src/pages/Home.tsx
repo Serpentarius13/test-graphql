@@ -3,7 +3,7 @@ import { Pagination } from "@/features/Pagination";
 
 import AllRepositories from "@/widgets/repo/AllRepositories/ui/AllRepositories";
 import { useRef } from "react";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export default function Home() {
   const navigatorRef = useRef<HTMLElement | null>(null);

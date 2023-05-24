@@ -53,7 +53,7 @@ export default function AllRepositories() {
     variables: { query, endMarker: fetchedPages[page - 1]?.endMarker },
   });
   const handleSetQuery = (e: ChangeEvent) => {
-    setQuery((state) => {
+    setQuery(() => {
       const { value } = e.target as HTMLInputElement;
 
       setSearchParams({ query, page: "1" });

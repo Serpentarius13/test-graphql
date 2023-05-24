@@ -1,7 +1,7 @@
 import { useRepoStore } from "@/widgets/repo/AllRepositories/models/store/useRepoStore";
 import cls from "./Pagination.module.scss";
 import { roundTo } from "@/features/roundTo";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo,  useState } from "react";
 
 import { classNames } from "@/features/classNames";
 
@@ -46,7 +46,7 @@ export default function Pagination({ currentPage, setPage }: PaginationProps) {
 
   useEffect(() => {
     setCurPage(+currentPage);
-  }, []);
+  }, [currentPage]);
 
   return (
     <aside className={cls.pagination}>

@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUp } from "lucide-react";
 import cls from "./Navigator.module.scss";
-import { Ref, RefObject } from "react";
+import {  RefObject } from "react";
 import { sleep } from "@/features/sleep";
 
 export default function Navigator({

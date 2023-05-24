@@ -4,7 +4,7 @@ import { Stars } from "@/shared/Stars";
 import { LastCommit } from "@/shared/LastCommit";
 
 import { Languages } from "@/shared/Languages";
-import { useLocation } from "react-router-dom";
+
 
 export default function Repository({
   name,

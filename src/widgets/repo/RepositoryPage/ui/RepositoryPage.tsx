@@ -1,11 +1,9 @@
 import { getOneRepoQuery } from "../model/getOneRepoQuery";
 import { LoadingSpinner } from "@/shared/Loading";
 
-import { IOneRepo } from "../types/oneRepo";
-import { classNames } from "@/features/classNames";
 import { useQuery } from "@apollo/client";
 import { Repository } from "@/entities/repo/Repository";
-import { OneRepoQuery } from "@/gql/graphql";
+
 import ErrorMessage from "@/shared/ErrorMessage/ui/ErrorMessage";
 
 export default function RepositoryPage({
