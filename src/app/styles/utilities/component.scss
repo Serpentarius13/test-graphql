@@ -1,0 +1,21 @@
+@import "./media.scss";
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+
+  @include ltDesktop {
+    padding: 0 2rem;
+  }
+}
+
+.borderline {
+  border: 1px solid rgba(0, 0, 0, 0.199);
+}

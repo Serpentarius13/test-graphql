@@ -11,12 +11,12 @@ export default function LoadingSpinner({
 }: LoadingSpinnerProps) {
   return (
     <div
-      className={cls["lds-hourglass"]}
+      className={cls["spinner"]}
       style={{
         aspectRatio: "1/1",
-        width: size,
-        borderWidth: ~~(+size / 2),
-        borderColor: color,
+        width: size + "px",
+        borderWidth: ~~(+size / 10),
+        borderBottomColor: color,
       }}
     />
   );

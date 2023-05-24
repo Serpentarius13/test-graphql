@@ -1,0 +1,12 @@
+.error {
+  font-size: 2rem;
+  color: red;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 35rem;
+  max-width: 100vw;
+}

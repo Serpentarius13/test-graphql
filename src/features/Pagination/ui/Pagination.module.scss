@@ -1,0 +1,34 @@
+.pagination {
+  position: fixed;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    max-width: 15rem;
+
+    justify-content: center;
+
+    button {
+      padding: 1rem;
+      font-size: 1.4rem;
+
+      transition: 0.25s ease all;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+.active {
+  background-color: blue;
+  color: white;
+}

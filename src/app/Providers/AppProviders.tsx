@@ -1,5 +1,6 @@
 import ApolloClientProvider from "./Apollo/ApolloClientProvider";
-import ClientLayout from "./Layout/ClientLayout";
+import { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
+
 import RouterClientProvider from "./Router/RouterClientProvider";
 
 export default function AppProviders() {

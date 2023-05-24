@@ -10,7 +10,5 @@ export const classNames = (
   [
     className,
     ...otherNames,
-    ...Object.keys(dynamicNames)
-      .filter((k) => Boolean(dynamicNames[k]))
-      .map((k) => dynamicNames[k]),
+    ...Object.keys(dynamicNames).filter((k) => Boolean(dynamicNames[k])),
   ].join(" ");

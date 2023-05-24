@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
 const Home = lazy(() => import("@/pages/Home.tsx"));
-const Repository = lazy(() => import("@/pages/Repository.tsx"));
+const Repository = lazy(() => import("@/pages/Repository/ui/Repository"));
 
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -19,7 +19,7 @@ export const routes: TRoute[] = [
   },
 
   {
-    path: "/repository/:id",
+    path: "/repository/:namespace",
     element: Repository,
   },
 

@@ -7,6 +7,8 @@
 
   transition: 0.25s ease all;
 
+  width: fit-content;
+
   &.filled {
     background-color: black;
     color: white;

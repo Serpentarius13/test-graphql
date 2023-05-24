@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactPropTypes } from "react";
+import React, { ReactNode } from "react";
 
 import cls from "./ErrorBoundary.module.scss";
 import { CustomLink } from "@/shared/Button";
@@ -24,6 +24,7 @@ export class ErrorBoundary extends React.Component<
 
   componentDidCatch(error: Error) {
     // You can also log the error to an error reporting service
+    console.log(error);
     this.setState({ ...this.state, errorText: error.message });
   }
 

@@ -1,0 +1,60 @@
+.repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  min-height: 50rem;
+
+  &-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  &-author {
+    width: 100%;
+    min-height: 20rem;
+
+    transition: all 0.25s ease;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    img {
+      aspect-ratio: 1/1;
+      max-width: 100%;
+      border-radius: 100%;
+      border: 1px solid black;
+      padding: 1rem;
+    }
+
+    &:hover {
+      background-color: black;
+      color: white;
+
+      img {
+        border-color: white;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}

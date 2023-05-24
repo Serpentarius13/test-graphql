@@ -1,0 +1,19 @@
+.languages {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  li {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+
+    transition: 0.25s ease all;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

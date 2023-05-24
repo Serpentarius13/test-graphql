@@ -1,6 +1,6 @@
 import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 
-function getGithubCredentials(): { endpoint: string; key: string } {
+export function getGithubCredentials(): { endpoint: string; key: string } {
   const endpoint = import.meta.env.VITE_GITHUB_ENDPOINT;
   const key = import.meta.env.VITE_GITHUB_API_KEY;
 
