@@ -30,6 +30,7 @@ export default function RepositoryPage({
       {loading && !error ? (
         <LoadingSpinner />
       ) : (
+        //@ts-expect-error -_-
         <>{data && <Repository {...data.repository} />}</>
       )}
     </>

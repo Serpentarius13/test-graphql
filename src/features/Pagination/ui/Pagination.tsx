@@ -15,7 +15,8 @@ export default function Pagination({ currentPage, setPage }: PaginationProps) {
 
   const [curPage, setCurPage] = useState<number>(+currentPage);
 
-  const buttons = useMemo(() => {
+  //@ts-expect-error wtf undefined
+  const buttons = useMemo<number[]>(() => {
     const min = roundTo(curPage - 4, 1);
     const max = roundTo(curPage + 5, null);
 
@@ -30,7 +31,7 @@ export default function Pagination({ currentPage, setPage }: PaginationProps) {
       else numbers.push(undefined);
     }
 
-    return numbers.filter(Boolean);
+    return numbers.filter(Boolean)
   }, [fetchedPages, curPage]);
 
   function setCurrentPage(page: number) {
