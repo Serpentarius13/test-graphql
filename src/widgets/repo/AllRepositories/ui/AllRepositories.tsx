@@ -107,11 +107,12 @@ export default function AllRepositories() {
             <li key={ix} data-page={ix + 1}>
               <ul className={cls.repos}>
                 {p.repos?.map((repo, id) => (
-                  <RepositoryCard
-                    {...repo}
-                    key={id}
-                    last={id === p.repos.length - 1 ? lastRepository : null}
-                  />
+                  <li key={repo.node.name}>
+                    <RepositoryCard
+                      {...repo}
+                      last={id === p.repos.length - 1 ? lastRepository : null}
+                    />
+                  </li>
                 ))}
               </ul>
             </li>
