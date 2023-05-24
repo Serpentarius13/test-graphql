@@ -1,3 +1,5 @@
+@import "@/app/styles/utilities/media.scss";
+
 .pagination {
   position: fixed;
   left: 5%;
@@ -6,6 +8,14 @@
 
   padding: 1rem;
   border-radius: 1rem;
+
+  background-color: white;
+
+  @include ltBigDesktop {
+    transform: translate(0);
+    top: auto;
+    bottom: 5%;
+  }
 
   nav {
     display: flex;

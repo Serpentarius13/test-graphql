@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin ltBigDesktop {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
